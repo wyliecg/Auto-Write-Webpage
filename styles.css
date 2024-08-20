@@ -1,75 +1,77 @@
 /* styles.css */
 
+/* Base styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f5f5f7;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header styling */
 header {
     background-color: #38b6ff;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
+/* Navigation styling */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
-footer {
-    background-color: #38b6ff;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    margin-top: auto;
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Container styling */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-.intro,
-.collect,
-.how,
-.sharing,
-.security,
-.rights,
-.change,
-.end {
+/* Section styling */
+h2, h3 {
+    color: #333;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
-h2, h3 {
-    color: #38b6ff;
+.intro, .collect, .how, .sharing, .security, .rights, .change, .end {
+    margin-bottom: 40px;
 }
 
+/* Centered content */
 .centered-content {
     display: flex;
     justify-content: center;
@@ -77,20 +79,37 @@ h2, h3 {
     min-height: 80vh;
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
 }
 
+/* Link container */
 .link-container {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .link-container a {
-    background-color: #38b6ff;
+    background-color: #0071e3;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 30px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .link-container a:hover {
-    background-color: #2b92cc;
+    background-color: #005bb5;
+}
+
+/* Footer styling */
+footer {
+    background-color: #38b6ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
 }
